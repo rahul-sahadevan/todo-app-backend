@@ -1,0 +1,13 @@
+
+
+export const cleanupAndValidate = ({name,email,password})=>{
+    return new Promise((resolve,reject)=>{
+      if(!name || !email || !password){
+        reject("Missing Credentials!")
+      }
+      else{
+        resolve("registered succesfully!")
+      }
+    })
+
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body>
+
+    
+        <center><h1>Login</h1></center>
+        <form style="display: flex; flex-direction: column; gap: 10px; width: 50% !important; margin: auto;" action="/login_user" method="post" >
+             <label for="email">Emial: </label>
+             <input style="padding: 10px; border-radius: 3px; width: 100%;" type="text" placeholder="Email" name="email" required>
+             <label for="password">Password: </label>
+             <input style="padding: 10px; border-radius: 3px; width: 100%;" type="text" placeholder="Password" name="password" required>
+             <button style="width: 30%; padding: 10px; background-color: lightgreen; border: none; border-radius: 5px; margin: auto;" type="submit">Login</button>
+        </form>
+
+    
+</body>
+</html>
