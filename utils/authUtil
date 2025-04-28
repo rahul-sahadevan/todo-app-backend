@@ -1,9 +1,12 @@
 
-
-export const cleanupAndValidate = ({name,email,password})=>{
+const validator = require("validator")
+const cleanupAndValidate = ({name,email,password})=>{
     return new Promise((resolve,reject)=>{
       if(!name || !email || !password){
         reject("Missing Credentials!")
+      }
+      if(!validator.isEmail(email)){
+        reject("email is not valid!")
       }
       else{
         resolve("registered succesfully!")
@@ -11,3 +14,5 @@ export const cleanupAndValidate = ({name,email,password})=>{
     })
 
 }
+
+module.exports  = cleanupAndValidate

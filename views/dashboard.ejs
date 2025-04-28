@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body>
+
+    <div class="container" style="padding: 10px; margin: auto;">
+        <center><h1>Todo App</h1></center>
+        <form action="/create-todo" method="POST" style="margin: auto; display: flex; align-items: center; justify-content: center; gap: 5px;">
+            <input style="padding: 10px; border-radius: 3px; width: 50%; border: solid 1px gray;" type="text" placeholder="todo" name="todo">
+            <button type="submit" style="width: 30%; padding: 10px; background-color: lightgreen; border: none; border-radius: 5px;">Add</button>
+        </form>
+        <br>
+        <form style="margin-left: 100px;" action="/logout" method="POST">
+            <button type="submit" style="width: 20%; padding: 10px; background-color: lightcoral; border: none; border-radius: 5px;">Logout</button>
+        </form>
+        <br>
+        <form style="margin-left: 100px;" action="/logout_fromAll" method="POST">
+            <button type="submit" style="width: 20%; padding: 10px; background-color: rgb(247, 74, 74); border: none; border-radius: 5px;">Logout from All</button>
+        </form>
+
+    </div>
+    
+</body>
+</html>
